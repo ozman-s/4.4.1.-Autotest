@@ -117,7 +117,7 @@ class MainKtTest {
     @Test
     fun vkPay_transferLimitTest() {
         // arrange
-        val transfer = 5_000_00
+        val transfer = 95_000_00
         val transferMonth = 0
         val expectedResult = "Вы превысили лимит по переводам"
         // act
