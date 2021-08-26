@@ -40,7 +40,7 @@ class MainKtTest {
     fun mastercardAndMaestro_transferLimitTest() {
         // arrange
         val transfer = 505_000_00
-        val transferMonth = 905_000_00
+        val transferMonth = 0
         val expectedResult = "Вы превысили лимит по переводам"
         // act
         val result = mastercardAndMaestro(
@@ -87,7 +87,7 @@ class MainKtTest {
     fun visaAndMir_transferLimitTest() {
         // arrange
         val transfer = 805_000_00
-        val transferMonth = 905_000_00
+        val transferMonth = 0
         val expectedResult = "Вы превысили лимит по переводам"
         // act
         val result = visaAndMir(
@@ -117,8 +117,8 @@ class MainKtTest {
     @Test
     fun vkPay_transferLimitTest() {
         // arrange
-        val transfer = 505_000_00
-        val transferMonth = 905_000_00
+        val transfer = 5_000_00
+        val transferMonth = 0
         val expectedResult = "Вы превысили лимит по переводам"
         // act
         val result = vkPay(
