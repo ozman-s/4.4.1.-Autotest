@@ -21,4 +21,11 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build --info
+      
 
+    run: ./gradlew test jacocoTestReport
+   - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+          name: jacoco_reports
+          path: build/reports/jacoco/test/html
